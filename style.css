@@ -223,4 +223,136 @@ body {
     }
 
 }
+
+```css
+/* =========================
+   SECTION 2 : APOLOGY
+========================= */
+
+.apology {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px 20px;
+
+    background: #f9e8e4;
+}
+
+
+/* =========================
+   APOLOGY CARD
+========================= */
+
+.apology-card {
+
+    max-width: 750px;
+
+    padding: 55px 40px;
+
+    background: rgba(255, 255, 255, 0.85);
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 60px
+        rgba(80, 30, 30, 0.12);
+
+}
+
+
+/* =========================
+   SAD FACE
+========================= */
+
+.sad-face {
+
+    font-size: 65px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.apology-card h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 45px;
+
+    color: #702d2d;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.apology-card p {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #624747;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* =========================
+   SPECIAL TEXT
+========================= */
+
+.apology-card .highlight {
+
+    font-family: Georgia, serif;
+
+    font-size: 26px;
+
+    color: #702d2d;
+
+    margin-top: 25px;
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .apology-card {
+
+        padding: 40px 25px;
+
+    }
+
+    .apology-card h2 {
+
+        font-size: 38px;
+
+    }
+
+    .apology-card p {
+
+        font-size: 17px;
+
+    }
+
+}
 ```
+
