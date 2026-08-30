@@ -1,0 +1,226 @@
+```css
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #fff7f5;
+    color: #4a2525;
+}
+
+
+/* =========================
+   OPENING SECTION
+========================= */
+
+.opening {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            #ffe1dc,
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 90% 90%,
+            #f4d1cd,
+            transparent 35%
+        ),
+
+        #fff7f5;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.opening-content {
+    max-width: 700px;
+}
+
+
+/* =========================
+   SAD HEART
+========================= */
+
+.big-heart {
+    font-size: 80px;
+
+    margin-bottom: 20px;
+
+    animation: heartbeat 1.5s infinite;
+}
+
+
+/* HEART ANIMATION */
+
+@keyframes heartbeat {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+/* =========================
+   SMALL HEADING
+========================= */
+
+.small-heading {
+
+    font-size: 16px;
+
+    letter-spacing: 5px;
+
+    color: #9b6565;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =========================
+   MAIN HEADING
+========================= */
+
+.opening h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(
+        50px,
+        10vw,
+        90px
+    );
+
+    line-height: 0.95;
+
+    color: #702d2d;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.opening-text {
+
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    color: #684747;
+
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.opening button {
+
+    margin-top: 35px;
+
+    padding: 16px 32px;
+
+    border: none;
+
+    border-radius: 40px;
+
+    background: #702d2d;
+
+    color: white;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 30px
+        rgba(112, 45, 45, 0.20);
+
+    transition: all 0.3s ease;
+
+}
+
+
+/* BUTTON HOVER */
+
+.opening button:hover {
+
+    transform: translateY(-5px);
+
+    background: #8c3b3b;
+
+    box-shadow:
+        0 15px 35px
+        rgba(112, 45, 45, 0.30);
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .big-heart {
+        font-size: 65px;
+    }
+
+    .small-heading {
+        font-size: 13px;
+        letter-spacing: 4px;
+    }
+
+    .opening h1 {
+        font-size: 52px;
+    }
+
+    .opening-text {
+        font-size: 17px;
+    }
+
+    .opening button {
+        padding: 14px 27px;
+        font-size: 16px;
+    }
+
+}
+```
